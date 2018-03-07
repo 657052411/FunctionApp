@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_videos_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_video"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="内容"
+            android:textSize="17dp" />
+
+        <FrameLayout
+            android:id="@+id/frame_player_layout"
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <!--<com.example.tyjk.custom.CustomVideoView-->
+                <!--android:id="@+id/videoview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_error"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/xadsdk_ad_play" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

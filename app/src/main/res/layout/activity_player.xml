@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/texture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <FrameLayout
+            android:id="@+id/frame_player_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextureView
+                android:id="@+id/texture_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_error"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/xadsdk_ad_play" />
+
+
+            <include layout="@layout/include_voicelight_layout" />
+
+            <include layout="@layout/include_control_layout" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
